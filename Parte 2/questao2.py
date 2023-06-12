@@ -57,20 +57,20 @@ single_quantity = single_list
 multiple_quantity = multiple_list
 
 
-cores = ['red', 'green', 'blue', 'orange', 'yellow', 'pink', 'purple']
+colors = ['red', 'green', 'blue', 'orange', 'yellow', 'pink', 'purple']
 
 
 
 fig, (single, multiple) = plt.subplots(1, 2, figsize=(10, 5))
 
 
-single.pie(single_quantity, colors=cores, autopct=lambda pct: f'{pct:.2f}%')
+single.pie(single_quantity, colors = colors, autopct=lambda pct: f'{pct:.2f}%')
 single.set_title('''Representatividade dos grupos de idade 
 em relação ao tipo de acidente 
 (Single).''')
 
 
-multiple.pie(multiple_quantity, colors = cores, autopct=lambda pct: f'{pct:.2f}%')
+multiple.pie(multiple_quantity, colors = colors, autopct=lambda pct: f'{pct:.2f}%')
 multiple.set_title('''Representatividade dos grupos de idade 
 em relação ao tipo de acidente 
 (Multiple).''')
